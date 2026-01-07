@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "target": "ESNext",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "paths": {
+      "@repo/ui": ["packages/ui"]
+    }
+  },
+  "references": [
+    { "path": "./packages/nfts" },
+    { "path": "./packages/nfts-cli" },
+    { "path": "./apps/example-solidjs" }
+  ],
+  "include": [
+    "packages/*/src/**/*.ts",
+    "apps/*/src/**/*.ts",
+    "apps/*/*.config.ts",
+    "packages/*/*.config.ts"
+  ],
+  "exclude": ["node_modules"]
+}
+

@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "composite": true,
+    "moduleResolution": "bundler",
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "types": ["node"]
+  },
+  "include": ["./src", "*.config.ts", ".nitro/types/nitro.d.ts"],
+  "exclude": ["node_modules", ".nitro", ".output"]
+}
